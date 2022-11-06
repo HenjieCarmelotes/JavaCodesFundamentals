@@ -2,7 +2,7 @@ package java2022githubproject;
 
 /**
  * This program can tell a number between 1 and 100 that has the largest number of divisors
- * and also it can tell the number of divisor this number has. Since there can be numbers that have the same
+ * and also it can tell the number of divisors this particular number has. Since there can be numbers that have the same
  * maximum number of divisors, only the first one will be printed by the program.
  * */
 
