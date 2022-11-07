@@ -27,7 +27,7 @@ public class BreakWordsInString {
 		
 		for (i = 0; i < text.length(); i++) {
 			ch = text.charAt(i);
-			if (Character.isLetter(ch) ) {
+			if (Character.isLetter(ch) || ch = 39 ) {
 				System.out.print(ch);
 				didCR = false;
 			}
