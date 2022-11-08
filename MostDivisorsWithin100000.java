@@ -20,9 +20,8 @@ public class MostDivisorsWithin100000 {
 		saveCount[1] = 1; //We do not include the element 0.
 		
 		/*
-		 * Process all the remaining values of N from 2 to 100 and from here on, we have to 
-		 * update the values of maxD and numwithMax whenever we find a value of N that has more divisors than
-		 * the current value of maxDivisor
+		 * Process all the remaining values of N from 2 to 100000 and from here on, we have to 
+		 * update the values of maxDivisor and store all the divisor count in the array.
 		 * */
 		
 		for (N = 2; N <= 100_000; N++) {
@@ -37,12 +36,17 @@ public class MostDivisorsWithin100000 {
 					divisorCount++; //increment the number of divisors.
 			} //end of inner for loop
 			
-			saveCount[N] = divisorCount; 
+			saveCount[N] = divisorCount; //record the count for each N in the array
 			
-			if (divisorCount > maxDivisor) {
+			if (divisorCount > maxDivisor) 
 				maxDivisor = divisorCount; //now, update the new maxDivisor value.
-			}
+			
 		} //end of outer for loop 
+		
+		
+		/* Since now we know the divisor count for each number, we then have to go through each number from 2 - 100000 with their divisor count. 
+		 * If the maxDivisor we found matches the count of divisors of N stored in the array, we print it out.
+		 * */
 		
 		System.out.println("Between 1 and 100,000, the maximum number of divisors is: " + maxDivisor);
 		System.out.println("A number in this range that has " + maxDivisor + " divisors are");
