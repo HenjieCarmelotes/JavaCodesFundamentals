@@ -37,4 +37,4 @@ public class ChristmasStars {
 	       
 	} // end of main
 
-}
+} end of ChristmasStars class.
