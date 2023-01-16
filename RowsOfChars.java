@@ -38,7 +38,7 @@ public class RowsOfChars {
 		String inputLine; // Line of text input by user.
 		System.out.print("Enter a line of text: ");
 		inputLine = stdin.next();
-		int inputNum; //the number of copies wanter
+		int inputNum; //the number of copies wanted
 		System.out.print("How many character copies you want? ");
 		inputNum = stdin.nextInt();
 		System.out.println();
